@@ -1,2 +1,25 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿// string subject = "Программирование";
+
+// foreach (char letter in subject)
+// {
+//     Console.WriteLine(letter);
+// }
+// for (int count = 0; count < subject.Length; count++)
+// {
+//     Console.WriteLine(count);
+// }
+
+// int[] grades = { 4, 5, 3, 5, 4 };
+// int count = 0;
+// double mid = 0;
+// foreach (int grade in grades)
+// {
+//     Console.WriteLine(grade);
+// }
+// for (int i = 0; i < grades.Length; i++)
+// {
+//     count += grades[i];
+//     mid = ((double)count / grades.Length);
+// }
+// Console.WriteLine(count);
+// Console.WriteLine(mid);
