@@ -23,3 +23,21 @@
 // }
 // Console.WriteLine(count);
 // Console.WriteLine(mid);
+
+// string[] students = { "Аня", "Ярослав", "Вика" };
+// int count = 0;
+
+// foreach (string student in students)
+// {
+//     count++;
+//     Console.WriteLine(student);
+//     Console.WriteLine(count);
+// }
+
+using System.Drawing;
+
+int[] points = { 10, 20, 15 };
+
+
+
+
