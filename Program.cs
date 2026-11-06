@@ -38,6 +38,12 @@ using System.Drawing;
 
 int[] points = { 10, 20, 15 };
 
+for (int i = 0; i < points.Length; i++)
+{
+    points[i] = points[i] + 5;
+}
 
-
-
+for (int i = 0; i < points.Length; i++)
+{
+    Console.WriteLine(points[i]);
+}
