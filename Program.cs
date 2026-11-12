@@ -90,16 +90,29 @@
 //             index++;
 //         }
 
-int[] grades = { 3, 5, 4, 5, 2, 5, 4, 5 };
+// 
 
-        int countOfFives = 0;
+string[] names = { "Анна", "Иван", "Елена", "Дмитрий", "Ольга" };
+        int[] grades = { 4, 5, 3, 2, 4 };
 
-        foreach (int grade in grades)
+        int sumGrades = 0;
+        int maxGrade = grades[0];
+        string bestStudent = names[0];
+
+        for (int i = 0; i < names.Length; i++)
         {
-            if (grade == 5)
+            Console.WriteLine($"{names[i]} — {grades[i]}");
+
+            sumGrades += grades[i];
+
+            if (grades[i] > maxGrade)
             {
-                countOfFives++; 
+                maxGrade = grades[i];
+                bestStudent = names[i];
             }
         }
 
-        Console.WriteLine($"Количество оценок равных 5: {countOfFives}");
+        double averageGrade = (double)sumGrades / grades.Length;
+
+        Console.WriteLine($"\nСредний балл по классу: {averageGrade:F2}");
+        Console.WriteLine($"Ученик с максимальной оценкой: {bestStudent} ({maxGrade})");
