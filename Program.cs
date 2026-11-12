@@ -34,16 +34,72 @@
 //     Console.WriteLine(count);
 // }
 
-using System.Drawing;
+// using System.Drawing;
 
-int[] points = { 10, 20, 15 };
+// int[] points = { 10, 20, 15 };
 
-for (int i = 0; i < points.Length; i++)
-{
-    points[i] = points[i] + 5;
-}
+// for (int i = 0; i < points.Length; i++)
+// {
+//     points[i] = points[i] + 5;
+// }
 
-for (int i = 0; i < points.Length; i++)
-{
-    Console.WriteLine(points[i]);
-}
+// for (int i = 0; i < points.Length; i++)
+// {
+//     Console.WriteLine(points[i]);
+// }
+
+
+// int[] numbers = { 10, 20, 30, 40, 50 };
+//         int sum = 0;
+
+//         foreach (int num in numbers)
+//         {
+//             Console.WriteLine(num);
+//             sum += num;
+//         }
+//         Console.WriteLine($"Сумма чисел: {sum}\n");
+
+// string[] daysOfWeek = { "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота", "Воскресенье" };
+
+//         foreach (string day in daysOfWeek)
+//         {
+//             Console.WriteLine($"{day}!");
+//         }
+
+// Console.Write("Введите свою фамилию: ");
+// string surname = Console.ReadLine()!.Trim();
+// if (string.IsNullOrEmpty(surname)) {
+// Console.WriteLine("Фамилия не введена. Завершение работы.");
+// return;
+// }
+// Random rnd = new(surname.GetHashCode() + DateTime.Now.DayOfYear);
+// var assigned = Enumerable.Range(1, 10)
+// .OrderBy(_ => rnd.Next())
+// .Take(2)
+// .OrderBy(x => x)
+// .ToList();
+// Console.WriteLine($"Задачи: №{assigned[0]} и №{assigned[1]}");
+
+// string[] participants = { "Анна", "Иван", "Елена"};
+
+//         int index = 1;
+
+//         foreach (string name in participants)
+//         {
+//             Console.WriteLine($"{index}. {name}");
+//             index++;
+//         }
+
+int[] grades = { 3, 5, 4, 5, 2, 5, 4, 5 };
+
+        int countOfFives = 0;
+
+        foreach (int grade in grades)
+        {
+            if (grade == 5)
+            {
+                countOfFives++; 
+            }
+        }
+
+        Console.WriteLine($"Количество оценок равных 5: {countOfFives}");
